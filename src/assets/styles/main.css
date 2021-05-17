@@ -135,7 +135,7 @@ form input{
 }
 footer{
     background: black;
-    height: 80px;
+    height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
