@@ -12,7 +12,6 @@ getResultButton.addEventListener('click', displayResult);
 function displayResult(){
     displayResultOnScreen.textContent = problemSolver(parseFloat(velocidadA.value), parseFloat(velocidadB.value), parseFloat(distancia.value));
     displayResultOnScreen.style.color = 'white';
-    displayResultOnScreen.style.fontSize = '1.8rem';
     displayResultOnScreen.style.textAlign = 'center';
 
 

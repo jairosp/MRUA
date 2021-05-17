@@ -12,9 +12,10 @@
 html{
     font-size: 62.5%;
     font-family: var(--font);
+    text-align: center;
 }
 header{
-    height: 200px;
+    max-height: 400px;
     background-color: var(--dark-blue);
     color: white;
     display: flex;
@@ -23,14 +24,21 @@ header{
     justify-content: center;
 }
 header h1{
+    margin: 50px;
+    margin-bottom: 20px;
     font-weight: bold;
     font-size: 4.5rem;
 }
+header p{
+    font-size: 1.6rem;
+    text-align: justify;
+    margin: 25px;
+}
 main{
-    height: 75vh;
+    height: auto;
 }
 .main-form{
-    margin: 20px;
+    /* margin: 20px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -54,6 +62,7 @@ form input{
 }
 .main-form__v1{
     margin: 20px;
+    margin-top: 40px;
     width: 300px;
     height: auto;
     max-height: 100px;
@@ -112,10 +121,13 @@ form input{
 #printResult {
     width: 400px;
     height: 100px;
+    margin-bottom: 10px;
     background-color: var(--display-blue);
     padding: 20px;
     border: gray 3px solid;
     border-radius: 5px;
+    font-size: 1.8rem;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -142,4 +154,33 @@ footer ul li img{
     height: 16px;
     width: 16px;
 
+}
+@media (max-width: 700px) {
+    header h1{
+        font-size: 2.5rem;
+    }
+    header p {
+        font-size: 1.4rem;
+    }
+    main{
+        height: auto;
+    }
+    #printResult {
+        width: 80%;
+    }
+    .main-form__v1{
+        width: 80%;
+    }
+    .main-form__v2{
+        width: 80%;
+    }
+    .main-form__distance{
+        width: 80%;
+    }
+    form input{
+        width: 120px;
+    }
+    #printResult{
+        font-size: 1.2rem;
+    }
 }
