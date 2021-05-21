@@ -11,10 +11,12 @@
 </head>
 <body>
     <header>
-        <h1 class="main-title">Problema coches de diferentes ciudades</h1>
-        <p>Dos coches A y B salen desde dos ciudades distintas, en algún punto se llegan a cruzar ya que van en sentidos opuestos, rellene los datos y averigue el punto y tiempo en el que se encuentran.</p>
+        <h1 class="main-title">Problem Solver</h1>
+        <p>Introduzca los datos correspondientes a cada problema para obtener los resultados.</p>
     </header>
     <main>
+        <h1 class="problem-title">Problema coches de diferentes ciudades</h1>
+        <p class="problem-p">Dos coches A y B salen desde dos ciudades distintas, en algún punto se llegan a cruzar ya que van en sentidos opuestos, rellene los datos y averigue el punto y tiempo en el que se encuentran.</p>
         
         <form action="" class="main-form">
             <div class="main-form__v1 main-form__v">
@@ -32,9 +34,35 @@
                 <input type="number" id="distancia" placeholder="m">
             </div>
 
-            <div id="getResult"><p>Calcular punto de encuentro</p></div>
+            <div id="getResultMRU"><p>Calcular punto de encuentro</p></div>
 
-            <div id="printResult">
+            <div id="printResultMRU">
+
+            </div>
+        </form>
+        <form action="" class="main-form">
+            <h1 class="problem-title">Problema polea en extremo con 2 cuerpos</h1>
+            <p class="problem-p">Sobre una superficie determinada se encuentra un cuerpo A que está conectado a un cuerpo B colgante a través de una polea, rellene los datos para averiguar la aceletación y la tensión resultante.</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu37kH7pXRKJWS2-zIiTgf9SxQtQd8tyYQZg&usqp=CAU" alt="" class="img">
+
+            <div class="main-form__m1 main-form__m">
+                <label for="velocidadA">Introduce la masa del cuerpo A</label>
+                <input type="number" id="masa1" placeholder="kg">
+            </div>
+
+            <div class="main-form__m2 main-form__m">
+                <label for="velocidadB" >Introduce la masa del cuerpo B</label>
+                <input type="number" id="masa2" placeholder="kg">
+            </div>
+
+            <div class="main-form__coeficient">
+                <label for="distancia" >Introduce el coeficiente de rozamiento</label>
+                <input type="number" id="coeficient">
+            </div>
+
+            <div id="getResultDINAMIC"><p>Calcular aceletación y tensión</p></div>
+
+            <div id="printResultDINAMIC">
 
             </div>
         </form>

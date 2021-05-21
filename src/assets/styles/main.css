@@ -37,8 +37,23 @@ header p{
 main{
     height: auto;
 }
+main .img{
+    margin: 20px 0 0 0;
+    border: 3px solid;
+}
+main .problem-title{
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin: 0 30px;
+    margin-top: 40px;
+}
+main .problem-p{
+    font-size: 1.6rem;
+    margin: 0 50px;
+    margin-top: 10px;
+}
 .main-form{
-    /* margin: 20px; */
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -60,7 +75,7 @@ form input{
     outline: none;
     border: none
 }
-.main-form__v1{
+.main-form__v1, .main-form__m1{
     margin: 20px;
     margin-top: 40px;
     width: 300px;
@@ -74,7 +89,7 @@ form input{
     background-color: var(--soft-blue);
     border-radius: 20px;
 }
-.main-form__v2{
+.main-form__v2, .main-form__m2{
     margin: 20px;
     width: 300px;
     height: auto;
@@ -87,7 +102,7 @@ form input{
     background-color: var(--soft-blue);
     border-radius: 20px;
 }
-.main-form__distance{
+.main-form__distance, .main-form__coeficient    {
     margin: 20px;
     width: 300px;
     height: auto;
@@ -101,10 +116,11 @@ form input{
     border-radius: 20px;
 }
 
-#getResult{
+#getResultMRU, #getResultDINAMIC{
     width: 200px;
     height: 50px;
     margin: 20px;
+    margin-bottom: 25px;
     text-align: center;
     background-color: var(--dark-blue);
     border-radius: 6px;
@@ -113,12 +129,12 @@ form input{
     justify-content: center;
     align-items: center;
 }
-#getResult p{
+#getResultMRU p, #getResultDINAMIC p{
     color: white;
     font-size: 1.6rem;
     margin: auto;
 }
-#printResult {
+#printResultMRU, #printResultDINAMIC {
     width: 400px;
     height: 100px;
     margin-bottom: 10px;
@@ -165,22 +181,22 @@ footer ul li img{
     main{
         height: auto;
     }
-    #printResult {
+    main .problem-title{
+        font-size: 2rem;
+    }
+    main .problem-p{
+        font-size: 1.4rem;
+    }
+    #printResultMRU, #printResultDINAMIC {
         width: 80%;
     }
-    .main-form__v1{
-        width: 80%;
-    }
-    .main-form__v2{
-        width: 80%;
-    }
-    .main-form__distance{
+    .main-form__v1, .main-form__v2, .main-form__m1, .main-form__m2, .main-form__distance, .main-form__coeficient{
         width: 80%;
     }
     form input{
         width: 120px;
     }
-    #printResult{
+    #printResultMRU, #printResultDINAMIC{
         font-size: 1.2rem;
     }
 }
